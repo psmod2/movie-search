@@ -1,26 +1,24 @@
 html {
   font-family: 'Roboto', sans-serif;
 }
-
 body {
   background-color: #f2f2f2;
   margin: 0px;
 }
-
 .header {
   text-align: center;
-  background-color: black;
-  padding: 15px;
+  background-color: #ff6350;
+  padding: 20px;
 }
 .headerTitle {
   font-family: 'Abril Fatface', cursive;
   font-size: 1.3rem;
-  color: white;
+  color: #fff;
 }
 .headerSearch {
   text-align: center;
   padding: 20px;
-  background-color: white;
+  background-color: #fff;
 }
 .searchInput {
   width: 80%;
@@ -28,5 +26,5 @@ body {
   font-size: 1.2rem;
   padding: 5px;
   border: none;
-  border-bottom: 1px black solid;
+  border-bottom: 1px #000 solid;
 }
