@@ -6,18 +6,24 @@
     <meta name="description" content="The Movie Search DB Exercise">
 
     <link rel="stylesheet" href="/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Abril+Fatface" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300|Oswald" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="/js/main.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
+
 </head>
 <body>
 
     <div class="header">
-      <span class="headerTitle">My First Movie Search</span>
+      <a href="/"><span class="headerTitle">A MOVIE SEARCH</span></a>
     </div>
-    <div class="headerSearch">
-      <input class="searchInput" type="text">
-    </div>
+
+    <form class="headerSearch" action="javascript:goSearch()">
+      <input id="movieSearchField" class="searchInput" type="text" autocomplete="false"
+        placeholder="Search Here"></input>
+      <input class="searchButton" type="submit" value=">"></input>
+    </form>
 
     {{{body}}}
 

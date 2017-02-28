@@ -12,8 +12,8 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.get('/search', function (req, res) {
-    res.render('search');
+app.get('/detail', function (req, res) {
+    res.render('detail');
 });
 
 var port_number = process.env.PORT || 3000;
