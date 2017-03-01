@@ -3,8 +3,10 @@
   <a href="detail?id={{this.id}}">
 
     {{#if this.poster_path}}
+      <!--The width of the image is described by width 185-->
       <img src="http://image.tmdb.org/t/p/w185//{{this.poster_path}}"/>
     {{else}}
+      <!--Explcitly set width here as the original image is 300px width-->
       <img src="images/missingPoster.png" width="185"/>
     {{/if}}
 
