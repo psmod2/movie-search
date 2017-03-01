@@ -1,1 +1,47 @@
-{{id}}
+<script src="/js/detail.js"></script>
+
+{{#if backdrop_path}}
+  <div class="bgHolder">
+    <div class="bgImage" style="background-image: url(http://image.tmdb.org/t/p/w185//{{backdrop_path}})" >
+    </div>
+  </div>
+{{/if}}
+
+
+<h1 class="movieTitle">{{original_title}}</h1>
+{{#if tagline}}
+  <h4 class="movieTagLine">{{tagline}}</h4>
+{{/if}}
+
+<section class="filmDetailsContainer">
+
+<div class="leftDetails">
+  {{#if poster_path}}
+    <img src="http://image.tmdb.org/t/p/w300//{{poster_path}}"/>
+  {{else}}
+    <img src="images/missingPoster.png"/>
+  {{/if}}
+</div>
+
+<div class="rightDetails">
+  {{overview}}
+
+  <ul class="genresUL">
+    {{#each genres}}
+      <li class="genresLI">{{this.name}}</li>
+    {{/each}}
+  </ul>
+
+  <p>
+    <i class="fa fa-calendar" aria-hidden="true"></i>
+    <span id="releaseDate">
+      {{release_date}}
+    </span>
+  </p>
+
+  <i class="fa fa-clock-o" aria-hidden="true"></i>
+  {{runtime}} mins
+
+</div>
+
+</section>

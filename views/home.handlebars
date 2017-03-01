@@ -1,5 +1,13 @@
-<div id="resultsBlock"></div>
-
+<div class="moviesContainer">
 {{#each moviesFound}}
-  <a href="detail?id={{this.id}}"><img src="http://image.tmdb.org/t/p/w185//{{this.poster_path}}"/></a>
+  <a href="detail?id={{this.id}}">
+
+    {{#if this.poster_path}}
+      <img src="http://image.tmdb.org/t/p/w185//{{this.poster_path}}"/>
+    {{else}}
+      <img src="images/missingPoster.png" width="185"/>
+    {{/if}}
+
+  </a>
 {{/each}}
+</div>

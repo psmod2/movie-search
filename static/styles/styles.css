@@ -8,6 +8,7 @@ html {
 body {
   background-color: #f2f2f2;
   margin: 0px;
+  height: 100%;
 }
 .header {
   text-align: center;
@@ -41,10 +42,57 @@ body {
   background-color: #fff;
   font-size: 1.5rem;
 }
-#resultsBlock {
-  margin-top: 10px;
+.moviesContainer {
   text-align: center;
 }
-.resultsItems {
-  padding-right: 5px;
+.bgHolder {
+  position: absolute;
+  float: left;
+  height: 630px;
+  width: 100%;
+  z-index: -10;
+}
+.bgImage {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  opacity: 0.3;
+}
+.movieTitle {
+  padding-left: 20px;
+  font-size: 2.6rem;
+  font-family: 'Oswald', cursive;
+}
+.movieTagLine {
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.filmDetailsContainer {
+  width: 100%;
+}
+.leftDetails {
+  float: left;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+.rightDetails {
+  padding-left: 20px;
+  padding-right: 50px;
+}
+.genresUL {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.genresLI {
+  display: inline-block;
+  background-color: #ff6350;
+  padding: 5px;
+  border-radius: 5px;
 }
