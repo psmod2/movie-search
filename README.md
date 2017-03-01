@@ -6,3 +6,9 @@ Install using ```npm install```
 And run using ```npm start```
 
 For dev, use ```npm dev```
+
+
+
+Improvements ToDo:
+
+- Auto suggest movies in search field
